@@ -1,6 +1,6 @@
 # FlowVid libmpv (Windows) pinned versions
 
-Reproducibility manifest for `flow-vid/flowvid-mpv-winbuild-cmake` (fork of
+Reproducibility manifest for `flow-vid/flowvid-libmpv-windows-recipe` (fork of
 `shinchiro/mpv-winbuild-cmake`). Used by `flow-vid/flowvid-libmpv-desktop` to build the **LGPL**
 `libmpv-2.dll` bundled in FlowVid PC.
 
