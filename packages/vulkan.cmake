@@ -4,7 +4,8 @@ ExternalProject_Add(vulkan
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
-    GIT_TAG e069cc27e242393c46af31898aec633a18e94c91  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)    CONFIGURE_COMMAND ${EXEC} CONF=1 cmake -H<SOURCE_DIR> -B<BINARY_DIR>
+    GIT_TAG e069cc27e242393c46af31898aec633a18e94c91  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
+    CONFIGURE_COMMAND ${EXEC} CONF=1 cmake -H<SOURCE_DIR> -B<BINARY_DIR>
         -G Ninja
         -DCMAKE_BUILD_TYPE=Release
         -DCMAKE_TOOLCHAIN_FILE=${TOOLCHAIN_FILE}
