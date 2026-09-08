@@ -4,8 +4,7 @@ ExternalProject_Add(nghttp3
     GIT_CLONE_FLAGS "--depth=1 --sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !tests"
     GIT_SUBMODULES lib/sfparse
-    GIT_TAG main
-    GIT_REMOTE_NAME origin
+    GIT_TAG f7e90d0404e357f95a4e6b4b51d21541890fd11b  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ${EXEC} ${CMAKE_COMMAND} -H<SOURCE_DIR> -B<BINARY_DIR>
         -G Ninja

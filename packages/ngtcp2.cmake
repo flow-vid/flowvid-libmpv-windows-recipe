@@ -6,8 +6,7 @@ ExternalProject_Add(ngtcp2
     GIT_CLONE_FLAGS "--depth=1 --sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !tests"
     GIT_SUBMODULES ""
-    GIT_TAG main
-    GIT_REMOTE_NAME origin
+    GIT_TAG d8f99488399fe29dad7a5e59b9d50518c6c62a1a  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ${EXEC} ${CMAKE_COMMAND} -H<SOURCE_DIR> -B<BINARY_DIR>
         -G Ninja

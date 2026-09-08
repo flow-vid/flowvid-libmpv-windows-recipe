@@ -1,5 +1,6 @@
 ExternalProject_Add(nghttp2
     GIT_REPOSITORY https://github.com/nghttp2/nghttp2.git
+    GIT_TAG c39e41c86bbf9d58f95473c815ea6bae2cfb70f2  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--depth=1 --filter=tree:0"
     GIT_SUBMODULES ""

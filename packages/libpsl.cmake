@@ -1,5 +1,6 @@
 ExternalProject_Add(libpsl
     GIT_REPOSITORY https://github.com/rockdaboot/libpsl.git
+    GIT_TAG 27d23f016d78404614038758c7e46c840bacea76  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--depth=1 --sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !/fuzz !tests !tools tools/meson.build"
