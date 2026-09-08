@@ -8,9 +8,7 @@ ExternalProject_Add(vapoursynth
     GIT_CLONE_FLAGS "--sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /include !include/cython"
     UPDATE_COMMAND ""
-    GIT_REMOTE_NAME origin
-    GIT_TAG master
-    GIT_RESET e46204429041e95a881b61eedddd46c08f9a307c # 72
+    GIT_TAG e46204429041e95a881b61eedddd46c08f9a307c  # FlowVid pin 2026-09-08: the revision GIT_RESET already used
     PATCH_COMMAND ""
     CONFIGURE_COMMAND ""
     BUILD_COMMAND ""

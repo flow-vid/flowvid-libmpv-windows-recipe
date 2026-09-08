@@ -24,6 +24,7 @@ ExternalProject_Add(mpv
         libsdl2
         subrandr
         libsixel
+        curl
     GIT_REPOSITORY https://github.com/mpv-player/mpv.git
     GIT_TAG 2339eb72767517fc5a113283939f59076946fbc1  # FlowVid pin: mpv master (~v0.41.0), proven-buildable with this recipe + latest deps
     SOURCE_DIR ${SOURCE_LOCATION}
@@ -58,6 +59,7 @@ ExternalProject_Add(mpv
         -Dsubrandr=enabled
         -Dsixel=enabled
         ${mpv_gl}
+        -Dlibcurl=enabled
         -Dc_args='-Wno-error=int-conversion'
     BUILD_COMMAND ${EXEC} LTO_JOB=1 PDB=1 ninja -C <BINARY_DIR>
     INSTALL_COMMAND ""
