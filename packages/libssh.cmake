@@ -3,6 +3,7 @@ ExternalProject_Add(libssh
         zlib
         openssl
     GIT_REPOSITORY https://gitlab.com/libssh/libssh-mirror.git
+    GIT_TAG e224b86b2f0160b0590d1c6afef77230b812867b  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

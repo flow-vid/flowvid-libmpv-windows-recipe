@@ -2,6 +2,7 @@ ExternalProject_Add(libopusenc
     DEPENDS
         opus
     GIT_REPOSITORY https://github.com/xiph/libopusenc.git
+    GIT_TAG 3c65f440baff6220872ec11b0cbde37ef7a48f78  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

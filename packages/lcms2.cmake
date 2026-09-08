@@ -3,6 +3,7 @@ ExternalProject_Add(lcms2
         libjpeg
         zlib
     GIT_REPOSITORY https://github.com/mm2/Little-CMS.git
+    GIT_TAG 76ffc49448b8bd6aa6a36c1f5869ab318831abb9  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

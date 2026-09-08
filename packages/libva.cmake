@@ -1,5 +1,6 @@
 ExternalProject_Add(libva
     GIT_REPOSITORY https://github.com/intel/libva.git
+    GIT_TAG ad64eb9b616d1b66afaf4cb9f0ea0b8e0ec1169c  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     PATCH_COMMAND ${EXEC} sed -i "s/shared_library/library/g" va/meson.build

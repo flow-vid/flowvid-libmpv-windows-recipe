@@ -2,6 +2,7 @@ ExternalProject_Add(vorbis
     DEPENDS
         ogg
     GIT_REPOSITORY https://github.com/xiph/vorbis.git
+    GIT_TAG e3c9861ff096d52378e131ff8c334552e09cdffa  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

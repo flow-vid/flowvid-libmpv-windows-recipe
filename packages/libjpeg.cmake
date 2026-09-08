@@ -1,8 +1,7 @@
 ExternalProject_Add(libjpeg
     GIT_REPOSITORY https://github.com/libjpeg-turbo/libjpeg-turbo.git
     SOURCE_DIR ${SOURCE_LOCATION}
-    GIT_REMOTE_NAME origin
-    GIT_TAG main
+    GIT_TAG 01d607bd618334ccb5bfdd7e1891dda11d58036c  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ${EXEC} CONF=1 cmake -H<SOURCE_DIR> -B<BINARY_DIR>

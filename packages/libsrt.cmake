@@ -2,6 +2,7 @@ ExternalProject_Add(libsrt
     DEPENDS
         openssl
     GIT_REPOSITORY https://github.com/Haivision/srt.git
+    GIT_TAG c39196c9a568ae4e3289dd65cf54ba4154deb4a1  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

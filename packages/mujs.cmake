@@ -9,6 +9,7 @@ host=mingw")
 
 ExternalProject_Add(mujs
     GIT_REPOSITORY https://codeberg.org/ccxvii/mujs.git
+    GIT_TAG e892c9fdbbddba94e52f656ccb378ed4885e30cc  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     PATCH_COMMAND ${EXEC} git am --3way ${CMAKE_CURRENT_SOURCE_DIR}/mujs-*.patch

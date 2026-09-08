@@ -1,5 +1,6 @@
 ExternalProject_Add(libudfread
     GIT_REPOSITORY https://code.videolan.org/videolan/libudfread.git
+    GIT_TAG 139a2194525f2745b98a98e4d8fa627d07440176  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

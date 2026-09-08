@@ -2,6 +2,7 @@ ExternalProject_Add(speex
     DEPENDS
         ogg 
     GIT_REPOSITORY https://github.com/xiph/speex.git
+    GIT_TAG 05895229896dc942d453446eba6f9f5ddcf95422  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

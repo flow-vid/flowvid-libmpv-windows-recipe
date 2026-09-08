@@ -4,9 +4,7 @@ ExternalProject_Add(mbedtls
     GIT_CLONE_FLAGS "--filter=tree:0"
     PATCH_COMMAND ${EXEC} git am --3way ${CMAKE_CURRENT_SOURCE_DIR}/mbedtls-*.patch
     UPDATE_COMMAND ""
-    GIT_REMOTE_NAME origin
-    GIT_TAG master
-    GIT_RESET 1ec69067fa1351427f904362c1221b31538c8b57 # v3.5.0
+    GIT_TAG 1ec69067fa1351427f904362c1221b31538c8b57  # FlowVid pin 2026-09-08: the revision GIT_RESET already used
     CONFIGURE_COMMAND ${EXEC} CONF=1 cmake -H<SOURCE_DIR> -B<BINARY_DIR>
         -G Ninja
         -DCMAKE_BUILD_TYPE=Release

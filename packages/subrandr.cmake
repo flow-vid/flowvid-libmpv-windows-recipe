@@ -6,8 +6,7 @@ ExternalProject_Add(subrandr
     GIT_REPOSITORY https://github.com/afishhh/subrandr.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
-    GIT_REMOTE_NAME origin
-    GIT_TAG master
+    GIT_TAG 7539b47b2bd855c8f686dbd54a92bf8a8027b369  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     UPDATE_COMMAND ""
     PATCH_COMMAND ""
     CONFIGURE_COMMAND ""

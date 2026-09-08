@@ -1,5 +1,6 @@
 ExternalProject_Add(nvcodec-headers
     GIT_REPOSITORY https://git.videolan.org/git/ffmpeg/nv-codec-headers.git
+    GIT_TAG 1b5a81ada8874efb2af0534ffe74049c557e212d  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

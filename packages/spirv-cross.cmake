@@ -2,8 +2,7 @@ ExternalProject_Add(spirv-cross
     GIT_REPOSITORY https://github.com/KhronosGroup/SPIRV-Cross.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
-    GIT_REMOTE_NAME origin
-    GIT_TAG main
+    GIT_TAG 35f52882aa15fc6bbd64d5cd86572b4592e2234d  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     UPDATE_COMMAND ""
     PATCH_COMMAND ${EXEC} git am --3way ${CMAKE_CURRENT_SOURCE_DIR}/spirv-cross-*.patch
     CONFIGURE_COMMAND ${EXEC} CONF=1 cmake -H<SOURCE_DIR> -B<BINARY_DIR>

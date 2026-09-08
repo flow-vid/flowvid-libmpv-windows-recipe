@@ -1,11 +1,11 @@
 ExternalProject_Add(avisynth-headers
     GIT_REPOSITORY https://github.com/AviSynth/AviSynthPlus.git
+    GIT_TAG 21fdc997f9724b994896ba5520ddf64d677976b3  # FlowVid pin 2026-09-08: the revision GIT_RESET already used
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !distrib"
     GIT_SUBMODULES ""
     UPDATE_COMMAND ""
-    GIT_RESET 21fdc997f9724b994896ba5520ddf64d677976b3
     CONFIGURE_COMMAND ${EXEC} CONF=1 cmake -H<SOURCE_DIR> -B<BINARY_DIR>
         -G Ninja
         -DCMAKE_BUILD_TYPE=Release

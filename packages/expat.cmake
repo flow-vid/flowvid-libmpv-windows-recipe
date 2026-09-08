@@ -1,10 +1,10 @@
 ExternalProject_Add(expat
     GIT_REPOSITORY https://github.com/libexpat/libexpat.git
+    GIT_TAG c61098da494eea1cbd091118118dcee417faacea  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !testdata"
     UPDATE_COMMAND ""
-    GIT_REMOTE_NAME origin
     CONFIGURE_COMMAND ${EXEC} CONF=1 cmake -H<SOURCE_DIR>/expat -B<BINARY_DIR>
         -G Ninja
         -DCMAKE_BUILD_TYPE=Release

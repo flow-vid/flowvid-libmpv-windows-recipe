@@ -1,5 +1,6 @@
 ExternalProject_Add(nettle
     GIT_REPOSITORY https://gitlab.com/shinchiro/nettle.git
+    GIT_TAG 66c7ef01faabe7ad6293d6b738d4103de77437b4  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     PATCH_COMMAND ${EXEC} git am --3way ${CMAKE_CURRENT_SOURCE_DIR}/nettle-*.patch

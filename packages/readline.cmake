@@ -2,6 +2,7 @@ ExternalProject_Add(readline
     DEPENDS
         termcap
     GIT_REPOSITORY https://git.sailfishos.org/mirror/readline.git
+    GIT_TAG 553d6bb272f26400d6d4d1cac7c1df84c447449b  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

@@ -1,5 +1,6 @@
 ExternalProject_Add(libdvdcss
     GIT_REPOSITORY https://code.videolan.org/videolan/libdvdcss.git
+    GIT_TAG 2682a4a7ed782e700a5b920f6f85c4f9736921c3  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

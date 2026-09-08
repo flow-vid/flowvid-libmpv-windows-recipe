@@ -5,8 +5,7 @@ ExternalProject_Add(llvm
     GIT_CLONE_FLAGS "--sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !*/test !/lldb !/mlir !/clang-tools-extra !/mlir !/polly !/bolt !/flang"
     UPDATE_COMMAND ""
-    GIT_REMOTE_NAME origin
-    GIT_TAG release/22.x
+    GIT_TAG ca7933e47d3a3451d81e72ac174dcb5aa28b59d1  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     LIST_SEPARATOR ,
     CONFIGURE_COMMAND ${EXEC} CONF=1 PATH=$O_PATH cmake -H<SOURCE_DIR>/llvm -B<BINARY_DIR>
         -G Ninja

@@ -1,10 +1,10 @@
 ExternalProject_Add(libsixel
     GIT_REPOSITORY https://github.com/saitoha/libsixel.git
+    GIT_TAG af12e5bc6f3f69ad83479da85ddb371420da9b17  # FlowVid pin 2026-09-08: the revision GIT_RESET already used
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !images"
     UPDATE_COMMAND ""
-    GIT_RESET af12e5bc6f3f69ad83479da85ddb371420da9b17
     CONFIGURE_COMMAND ${EXEC} <SOURCE_DIR>/autogen.sh && CONF=1 <SOURCE_DIR>/configure
         --host=${TARGET_ARCH}
         --prefix=${MINGW_INSTALL_PREFIX}

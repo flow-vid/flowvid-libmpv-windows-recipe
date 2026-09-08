@@ -1,6 +1,7 @@
 ExternalProject_Add(libdvdnav
     DEPENDS libdvdread
     GIT_REPOSITORY https://code.videolan.org/videolan/libdvdnav.git
+    GIT_TAG cf112772bf626f76a913efca5b883a381e4c123a  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

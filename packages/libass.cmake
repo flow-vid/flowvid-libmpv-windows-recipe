@@ -7,6 +7,7 @@ ExternalProject_Add(libass
         fontconfig
         libunibreak
     GIT_REPOSITORY https://github.com/libass/libass.git
+    GIT_TAG 4a05d8127f525943ebf45fdc6497c9e665947f0d  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

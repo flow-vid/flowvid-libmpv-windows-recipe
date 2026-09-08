@@ -9,6 +9,7 @@ ExternalProject_Add(libarchive
         openssl
         libxml2
     GIT_REPOSITORY https://github.com/libarchive/libarchive.git
+    GIT_TAG 414e4e05ca35898c33a367707a0e1f3e32aa243b  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

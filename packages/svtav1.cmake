@@ -1,5 +1,6 @@
 ExternalProject_Add(svtav1
     GIT_REPOSITORY https://gitlab.com/AOMediaCodec/SVT-AV1.git
+    GIT_TAG ec17f83820ed7cf006faec8a1a2215388d6f8f8c  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

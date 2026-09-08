@@ -2,8 +2,7 @@ ExternalProject_Add(aom
     GIT_REPOSITORY https://aomedia.googlesource.com/aom
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
-    GIT_REMOTE_NAME origin
-    GIT_TAG main
+    GIT_TAG f86486bf3d698b02116e58dc664e632321a190e7  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ${EXEC} CONF=1 cmake -H<SOURCE_DIR> -B<BINARY_DIR>
         -G Ninja

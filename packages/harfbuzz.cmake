@@ -4,8 +4,7 @@ ExternalProject_Add(harfbuzz
         libpng
     GIT_REPOSITORY https://github.com/harfbuzz/harfbuzz.git
     SOURCE_DIR ${SOURCE_LOCATION}
-    GIT_REMOTE_NAME origin
-    GIT_TAG main
+    GIT_TAG f2210d5787230f542a1b2035322134b0b686c0ae  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     GIT_CLONE_FLAGS "--sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !test"
     UPDATE_COMMAND ""

@@ -10,8 +10,7 @@ ExternalProject_Add(libjxl
     GIT_REPOSITORY https://github.com/libjxl/libjxl.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
-    GIT_REMOTE_NAME origin
-    GIT_TAG main
+    GIT_TAG 4a5700584c6628f162a75abe87ba36749d72e161  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     GIT_SUBMODULES ""
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ""

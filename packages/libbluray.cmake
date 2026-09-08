@@ -4,6 +4,7 @@ ExternalProject_Add(libbluray
         freetype2
         libxml2
     GIT_REPOSITORY https://code.videolan.org/videolan/libbluray.git
+    GIT_TAG 8b4fb6e2562bb86601ea5a2c4140af6d8f3f1cf4  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     GIT_SUBMODULES ""

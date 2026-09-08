@@ -1,5 +1,6 @@
 ExternalProject_Add(brotli
     GIT_REPOSITORY https://github.com/google/brotli.git
+    GIT_TAG 83fe766bc81f7911a78716b8d3b3d01367009995  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !tests !js !java !research"

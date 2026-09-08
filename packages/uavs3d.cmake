@@ -1,5 +1,6 @@
 ExternalProject_Add(uavs3d
     GIT_REPOSITORY https://github.com/uavs3/uavs3d.git
+    GIT_TAG 0e20d2c291853f196c68922a264bcd8471d75b68  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

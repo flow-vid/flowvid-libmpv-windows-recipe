@@ -1,9 +1,9 @@
 ExternalProject_Add(xz
     GIT_REPOSITORY https://github.com/tukaani-project/xz.git
+    GIT_TAG 3d078b52adbff566ccfc51067dfbf742ecf3ef86  # FlowVid pin 2026-09-08: the revision GIT_RESET already used
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
-    GIT_RESET 3d078b52adbff566ccfc51067dfbf742ecf3ef86 # v5.8.2
     CONFIGURE_COMMAND ${EXEC} CONF=1 autoreconf -fi && <SOURCE_DIR>/configure
         --host=${TARGET_ARCH}
         --prefix=${MINGW_INSTALL_PREFIX}

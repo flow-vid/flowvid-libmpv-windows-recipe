@@ -5,8 +5,7 @@ ExternalProject_Add(libzvbi
     GIT_REPOSITORY https://github.com/zapping-vbi/zvbi.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
-    GIT_REMOTE_NAME origin
-    GIT_TAG main
+    GIT_TAG f32296dcf4d1181d3e1288587e3b0698827a0b49  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ${EXEC} <SOURCE_DIR>/autogen.sh && CONF=1 <SOURCE_DIR>/configure
         --host=${TARGET_ARCH}

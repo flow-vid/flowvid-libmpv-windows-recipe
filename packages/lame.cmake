@@ -7,6 +7,7 @@ done")
 
 ExternalProject_Add(lame
     GIT_REPOSITORY https://gitlab.com/shinchiro/lame.git
+    GIT_TAG 9a5b35c430a2e6d150d65a96c7d7acdd64962a8f  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

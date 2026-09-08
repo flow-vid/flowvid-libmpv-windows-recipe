@@ -1,5 +1,6 @@
 ExternalProject_Add(highway
     GIT_REPOSITORY https://github.com/google/highway.git
+    GIT_TAG 86d7ac1fafd8843b74170d486176abb2e2cb5f60  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

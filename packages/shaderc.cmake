@@ -5,8 +5,7 @@ ExternalProject_Add(shaderc
         spirv-tools
     GIT_REPOSITORY https://github.com/google/shaderc.git
     SOURCE_DIR ${SOURCE_LOCATION}
-    GIT_REMOTE_NAME origin
-    GIT_TAG main
+    GIT_TAG 0c40fcc31d5cf56fba33bff0b1d469c344139cd8  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ${EXEC} LTO_JOB=1 CONF=1 cmake -H<SOURCE_DIR> -B<BINARY_DIR>

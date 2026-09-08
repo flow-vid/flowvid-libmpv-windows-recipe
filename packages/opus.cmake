@@ -5,8 +5,7 @@ ExternalProject_Add(opus
     GIT_REPOSITORY https://github.com/xiph/opus.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
-    GIT_REMOTE_NAME origin
-    GIT_TAG main
+    GIT_TAG 3da9f7a6db1c05c3996cb363a9d1931a978bf1be  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ""
     COMMAND bash -c "cp ${src_opus_dnn}/*.h ${src_opus_dnn}/*.c <SOURCE_DIR>/dnn"

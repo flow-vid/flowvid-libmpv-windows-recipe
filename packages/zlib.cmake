@@ -3,8 +3,7 @@ ExternalProject_Add(zlib
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
-    GIT_REMOTE_NAME origin
-    GIT_TAG develop
+    GIT_TAG 1bde81564a244fa625e1eaae33094b2faaef63a5  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     CONFIGURE_COMMAND ${EXEC} CONF=1 cmake -H<SOURCE_DIR> -B<BINARY_DIR>
         -G Ninja
         -DCMAKE_BUILD_TYPE=Release

@@ -2,6 +2,7 @@ ExternalProject_Add(curl
     DEPENDS
         mbedtls
     GIT_REPOSITORY https://github.com/curl/curl.git
+    GIT_TAG 2c1e625a6f6b8eafbdfcef6408407e08c63949bd  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     PATCH_COMMAND ${EXEC} git am --3way ${CMAKE_CURRENT_SOURCE_DIR}/curl-*.patch

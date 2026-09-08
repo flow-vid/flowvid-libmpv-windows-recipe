@@ -1,6 +1,7 @@
 ExternalProject_Add(libpng
     DEPENDS zlib
     GIT_REPOSITORY https://github.com/glennrp/libpng.git
+    GIT_TAG a22696be0aadb185de33c152cc81df899eeefe6a  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

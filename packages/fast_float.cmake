@@ -2,8 +2,7 @@ ExternalProject_Add(fast_float
     GIT_REPOSITORY https://github.com/fastfloat/fast_float.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
-    GIT_REMOTE_NAME origin
-    GIT_TAG main
+    GIT_TAG 8ec5d236e2a9bc6b89a191212920c2237144f936  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ""
     BUILD_COMMAND ""

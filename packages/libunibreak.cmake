@@ -1,5 +1,6 @@
 ExternalProject_Add(libunibreak
     GIT_REPOSITORY https://github.com/adah1972/libunibreak.git
+    GIT_TAG 3ce4bfa3129ff3738046a44a6db533d2ce25af2b  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

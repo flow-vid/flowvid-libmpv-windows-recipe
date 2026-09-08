@@ -1,5 +1,6 @@
 ExternalProject_Add(game-music-emu
     GIT_REPOSITORY https://bitbucket.org/mpyne/game-music-emu.git
+    GIT_TAG a5216b1dafe476b6de36a316a151c64df575197a  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

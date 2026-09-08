@@ -4,6 +4,7 @@ ExternalProject_Add(libaribcaption
         freetype2
         openssl
     GIT_REPOSITORY https://github.com/xqq/libaribcaption.git
+    GIT_TAG f9d8c50fe5e51c98d101f69d74591295cb568036  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

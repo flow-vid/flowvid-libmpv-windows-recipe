@@ -2,6 +2,7 @@ ExternalProject_Add(dav1d
     DEPENDS
         xxhash
     GIT_REPOSITORY https://code.videolan.org/videolan/dav1d.git
+    GIT_TAG 77ef66354d76a3c8aa4b11cde8093294fce23b0f  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

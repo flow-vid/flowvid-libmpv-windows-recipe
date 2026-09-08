@@ -4,6 +4,7 @@ ExternalProject_Add(openssl
         zstd
         brotli
     GIT_REPOSITORY https://github.com/openssl/openssl.git
+    GIT_TAG 1f1ce7cad32746f2dbbba8bbc5e82492241cb94b  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !test"

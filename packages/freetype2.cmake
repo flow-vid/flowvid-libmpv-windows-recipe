@@ -4,6 +4,7 @@ ExternalProject_Add(freetype2
         zlib
         brotli
     GIT_REPOSITORY https://github.com/freetype/freetype.git
+    GIT_TAG 25a08f24cfc0da879d1938352d026532f280b77e  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     GIT_SUBMODULES ""

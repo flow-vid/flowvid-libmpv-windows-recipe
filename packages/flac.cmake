@@ -1,6 +1,7 @@
 ExternalProject_Add(flac
     DEPENDS ogg
     GIT_REPOSITORY https://github.com/xiph/flac.git
+    GIT_TAG b430c3a58b64b70642ab5c72c36084dd4083d165  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

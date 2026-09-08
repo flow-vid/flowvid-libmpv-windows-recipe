@@ -1,6 +1,7 @@
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/libmodplug.pc.in ${CMAKE_CURRENT_BINARY_DIR}/libmodplug.pc @ONLY)
 ExternalProject_Add(libmodplug
     GIT_REPOSITORY https://github.com/Konstanty/libmodplug.git
+    GIT_TAG d1b97ed0020bc620a059d3675d1854b40bd2608d  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

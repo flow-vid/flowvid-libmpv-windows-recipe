@@ -2,9 +2,8 @@ ExternalProject_Add(xxhash
     GIT_REPOSITORY https://github.com/Cyan4973/xxHash.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
-    GIT_TAG dev
+    GIT_TAG e573d4d2aaeaba0f3e5a0a9a54144a1f2b4b56e7  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     UPDATE_COMMAND ""
-    GIT_REMOTE_NAME origin
     CONFIGURE_COMMAND ${EXEC} CONF=1 cmake -H<SOURCE_DIR>/build/cmake -B<BINARY_DIR>
         -G Ninja
         -DCMAKE_BUILD_TYPE=Release

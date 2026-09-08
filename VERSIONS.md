@@ -24,3 +24,7 @@ bit-for-bit reproducibility becomes a hard requirement (large, ongoing-maintenan
 Built with `compile-lgpl-libmpv.patch` (from the CI fork): drops x264/x265 (encoders), libssh, libsrt,
 libdvdnav, libdvdread, avisynth. All decoders + libass (ISC) + libplacebo remain → LGPLv2.1+, FFmpeg
 statically linked LGPLv3.
+
+## Dependency pins (2026-09-08)
+
+Every git-sourced package and toolchain component is pinned to a commit: the revision each repository had on 2026-06-25, the date of the last proven Windows build, or the revision the recipe already reset to. Nothing follows a branch tip anymore, so a rebuild months later produces the same inputs. Bump pins deliberately, one at a time, and rebuild.

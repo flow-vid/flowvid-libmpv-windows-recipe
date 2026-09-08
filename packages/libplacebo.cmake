@@ -10,6 +10,7 @@ ExternalProject_Add(libplacebo
         fast_float
         xxhash
     GIT_REPOSITORY https://github.com/haasn/libplacebo.git
+    GIT_TAG ef14f120cd5c4105861c4401c927001163a504f0  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     GIT_SUBMODULES ""

@@ -7,8 +7,7 @@ ExternalProject_Add(fontconfig
     GIT_REPOSITORY https://gitlab.freedesktop.org/fontconfig/fontconfig.git
     SOURCE_DIR ${SOURCE_LOCATION}
     UPDATE_COMMAND ""
-    GIT_REMOTE_NAME origin
-    GIT_TAG main
+    GIT_TAG f2c97a43cb35c7fffc47dae6f6e524322a88d964  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     GIT_CLONE_FLAGS "--filter=tree:0"
     PATCH_COMMAND ${EXEC} git am --3way ${CMAKE_CURRENT_SOURCE_DIR}/fontconfig-*.patch
     CONFIGURE_COMMAND ""

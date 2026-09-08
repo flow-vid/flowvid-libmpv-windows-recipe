@@ -2,6 +2,7 @@ ExternalProject_Add(openal-soft
     DEPENDS
         libsdl2
     GIT_REPOSITORY https://github.com/kcat/openal-soft.git
+    GIT_TAG dd4e07de0fe73d8c0326c4502f63e71da8ef268b  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

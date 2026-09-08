@@ -2,8 +2,7 @@ ExternalProject_Add(libvpx
     GIT_REPOSITORY https://chromium.googlesource.com/webm/libvpx.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
-    GIT_REMOTE_NAME origin
-    GIT_TAG main
+    GIT_TAG cd4d2a130e96528af9a278c99ea2501e4986dde5  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ${EXEC} CONF=1 CROSS=${TARGET_ARCH}- <SOURCE_DIR>/configure
         --extra-cflags='-fno-asynchronous-unwind-tables'

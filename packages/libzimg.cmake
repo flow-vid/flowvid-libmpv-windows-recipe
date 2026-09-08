@@ -3,6 +3,7 @@ ExternalProject_Add(libzimg
     DEPENDS
         graphengine
     GIT_REPOSITORY https://github.com/sekrit-twc/zimg.git
+    GIT_TAG b3647572a01927e2aa8d0b7aaa917207c9c1ae5d  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     GIT_SUBMODULES ""
