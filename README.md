@@ -41,5 +41,8 @@ authoritative executable build specification.
 
 This repository is derived from
 [`shinchiro/mpv-winbuild-cmake`](https://github.com/shinchiro/mpv-winbuild-cmake) and retains its
-history and component licenses. The FlowVid build's licensing rationale and exclusions are
-documented in `flowvid-libmpv-desktop/LICENSE-NOTES.md`.
+history and component licenses. The upstream project publishes no repository-level license file,
+and this fork does not add one: the scripts here are build glue, and the terms that matter are
+those of the components they build (mpv, FFmpeg and their dependencies). The FlowVid build's
+licensing rationale, the LGPL configuration and the excluded components are documented in
+`flowvid-libmpv-desktop/LICENSE-NOTES.md`.
