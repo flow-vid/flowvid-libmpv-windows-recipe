@@ -1,6 +1,6 @@
 ExternalProject_Add(fribidi
     GIT_REPOSITORY https://github.com/fribidi/fribidi.git
-    GIT_TAG 069a7e3d31e6aa74f2068a8e0804106ce7906639  # FlowVid pin 2026-09-08: revision as of 2026-06-25 (last proven build)
+    GIT_TAG 15393e4937aa95bcf865d92143735746aeb654fa  # FlowVid pin 2026-11: tag v1.0.18 (was 069a7e3d, 2026-06-25)
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !test"
